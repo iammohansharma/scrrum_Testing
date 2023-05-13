@@ -1,0 +1,38 @@
+<ion-card *ngFor="let datas of data">
+  <div class="option">
+    <ion-toolbar lines="none">
+  <ion-text slot="start" style=" padding-left: 16px;">{{datas.date}}</ion-text>
+  <ion-item lines="none">
+    <ion-icon slot="end" name="ellipsis-horizontal-outline"></ion-icon>
+    <ion-icon slot="end" name="return-up-forward-outline"></ion-icon>
+  </ion-item>
+    </ion-toolbar>
+  </div>
+  <div class="image">
+    <img alt="Silhouette of mountains" [src]=datas.image/>
+  </div>
+      <ion-card-header>
+     <ion-toolbar>
+    <ion-input slot="start" placeholder="Comment.."></ion-input>
+    <ion-icon slot="end" name="send" style="    font-size: 20px;      color: gray;  " ></ion-icon>
+    </ion-toolbar>
+      </ion-card-header>
+    
+      <ion-card-content>
+  
+        <ion-toolbar>
+          <ion-item lines="none">
+            <ion-avatar slot="start">
+              <img alt="Silhouette of a person's head" [src]= datas.profile />
+            </ion-avatar>
+            <ion-label>{{datas.username}}
+              <p>{{datas.location}}</p>
+            </ion-label>
+          </ion-item>  
+          <ion-icon slot="end" name="happy" style="    font-size: 23px;        "></ion-icon>
+  
+        </ion-toolbar>
+  
+       
+          </ion-card-content>
+    </ion-card>

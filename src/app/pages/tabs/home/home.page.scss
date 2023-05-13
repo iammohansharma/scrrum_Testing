@@ -1,0 +1,15 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+ion-tab-bar{
+    border: none;
+    /* padding: 10px; */
+    padding-top: 36px;
+    padding-left: 41px;
+}
+
+ion-button{
+    --box-shadow: none;
+    text-transform: capitalize;
+    --border-radius: 17px;
+}

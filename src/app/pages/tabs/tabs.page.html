@@ -1,0 +1,17 @@
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab()">
+  <ion-tab-bar>
+    <ion-tab-button tab="home" color="primary" >
+      <ion-icon [name]="selectedTab == 'home' ? 'home' : 'home-outline' "></ion-icon> 
+
+    </ion-tab-button>
+    <ion-tab-button tab="chat"  color="primary">
+      <ion-icon [name]="selectedTab == 'chat' ? 'chatbubble-ellipses' : 'chatbubble-ellipses-outline' "></ion-icon> 
+ </ion-tab-button>
+ <ion-tab-button tab="picture"  color="primary">
+  <ion-icon [name]="selectedTab == 'picture' ? 'folder-outline' : 'folder-outline' "></ion-icon> 
+</ion-tab-button>
+        <ion-tab-button tab="profile"  color="primary">
+          <ion-icon [name]="selectedTab == 'profile' ? 'person-circle' : 'person-circle-outline' "></ion-icon> 
+        </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

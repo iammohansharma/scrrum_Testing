@@ -1,0 +1,21 @@
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab()" >
+  <ion-tab-bar slot="top" lines="none" style="border: none;">
+    <ion-tab-button tab="feed" color="primary" >
+      <ion-button  size="default"  [fill]="selectedTab == 'feed' ?  'solid' : 'clear' "  [color]=" selectedTab == 'feed' ? 'primary' : 'medium' ">feed</ion-button>
+
+    </ion-tab-button>
+    <ion-tab-button tab="quotes"  color="primary">
+      <ion-button size="default"  [fill]="selectedTab == 'quotes' ?  'solid' : 'clear' "  [color]=" selectedTab == 'quotes' ? 'primary' : 'medium' ">Quotes</ion-button>
+
+      
+ </ion-tab-button>
+ <ion-tab-button tab="media"  color="primary">
+  <ion-button   size="default"  [fill]="selectedTab == 'media' ?  'solid' : 'clear' "   [color]=" selectedTab == 'media' ? 'primary' : 'medium' ">Media</ion-button>
+
+</ion-tab-button>
+        <ion-tab-button tab="opportunities"  color="primary">
+          <ion-button  size="default"  [fill]="selectedTab == 'opportunities' ?  'solid' : 'clear' "   [color]=" selectedTab == 'opportunities' ? 'primary' : 'medium' ">Opp </ion-button>
+
+        </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

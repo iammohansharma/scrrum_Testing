@@ -1,0 +1,23 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+ion-card{
+    box-shadow: none;
+    border: 1px solid gray;
+    border-radius: 24px;
+}
+ion-card-header{
+    padding: 0 11px 0 11px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 12px 0 15px 0;
+}
+
+.image{
+    padding: 15px;
+ img{
+    border-radius: 10px;
+
+ }
+}
